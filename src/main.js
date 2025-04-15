@@ -33,21 +33,27 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', () => {
     const valeurY = window.scrollY;
 
-    if (valeurY > 50) {
+    if (valeurY > 51) {
       contactRapid.classList.add('hidden');
       navbar.classList.add(
-        'absolute',
+        'fixed',
         'top-0',
         'left-0',
         'z-50',
+        'transition',
+        'duration-300',
+        'ease-in-out' 
       );
     } else {
       contactRapid.classList.remove('hidden');
       navbar.classList.remove(
-        'absolute',
+        'fixed',
         'top-0',
         'left-0',
         'z-50',
+        'transition',
+        'duration-1000',
+        'ease-in-out'
       );
     }
   })

@@ -9,40 +9,44 @@
   </head>
   <body class="relative">
 
-    <!-- Div de contact -->
-    <div id="contactRapide" class="flex h-[50px] bg-[#0F172A] pr-[150px] pl-[150px] justify-between">
-      <div class="flex h-[50px] w-3/4">
-        <ul class="flex items-center">
+    <!-- Contact rapide  -->
+    <div id="contact" class="grid grid-cols-3 h-[50px] bg-[#0F172A] pr-[150px] pl-[150px] items-center">
+       <!-- Phone et mail  -->
+      <div>
+        <ul class="flex">
           <li><p class="flex items-center text-white mr-[25px]"><img class="mr-3" src="./icons/phonewhite.svg" alt="phone_logo">+261 34 92 938 41</p></li>
           <li><p class="flex items-center text-white ml-[25px]"><img class="mr-3" src="./icons/mailwhite.svg" alt="phone_logo">aina.andriamiadantsoa.01@gmail.com</p></li>
         </ul>
       </div>
 
-      <div class="flex h-[50px] w-1/4 justify-end">
-        <ul class="flex items-center  space-x-[50px]">
+      <!-- Réseaux sociaux -->
+      <div class="col-span-2">
+        <ul class="flex justify-end space-x-[50px]">
           <li><a href="www.facebook.com" target="_blank"><img src="./icons/fbwhite.svg" alt="facebook_logo"></a></li>
           <li><a href="www.instagram.com" target="_blank"><img src="./icons/instagramwhite.svg" alt="instagram_logo"></a></li>
           <li><a href="www.twitter.com" target="_blank"><img src="./icons/twitterwhite.svg" alt="twitter_logo"></a></li>
           <li><a href="www.discord.com" target="_blank"><img src="./icons/discordwhite.svg" alt="discord_logo"></a></li>
         </ul>
       </div>
-    </div>
+    </div>  
 
-
-    <!-- Bar de navigation -->
-    <nav id="navbar" class="flex pr-[150px] pl-[150px] h-[70px] bg-white shadow-md">
-      <div class="flex w-1/4 items-center">
+    <!-- Navbar -->
+    <nav id="navbar" class="grid grid-cols-3 pr-[150px] pl-[150px] h-[70px] bg-white shadow-md w-full">
+      <!-- logo -->
+      <div class="flex items-center">
         <h2 class="font-bold text-[28px]">
           <span>Aina</span><span class="ml-[10px] text-[#CC00FF]">Network</span>
         </h2>
       </div>
-      <div class="flex w-3/4 justify-end">
-        <ul class="flex font-bold text-[16px] items-center bg-white">
+
+      <!-- navigation -->
+      <div class="col-span-2">
+        <ul class="flex justify-end font-bold text-[16px] bg-white gab-[10]">
           <li class="m-[25px] hover:text-[#CC00FF]"><a href="acceuil">Acceuil</a></li>
           <li class="m-[25px] hover:text-[#CC00FF]"><a href="acceuil">A propos</a></li>
           <li class="m-[25px] hover:text-[#CC00FF]"><a href="acceuil">Projets</a></li>
           <li class="m-[25px] hover:text-[#CC00FF]"><a href="acceuil">Services</a></li>
-          <li class="ml-[25px] hover:text-[#CC00FF]"><a href="acceuil">Contact</a></li>
+          <li class="ml-[25px] my-[25px] hover:text-[#CC00FF]"><a href="acceuil">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -58,122 +62,160 @@
       </div>
     </div>
 
-    <!-- About section -->
-    <div class="flex flex-row h-[800px] bg-[#F9FAFB] pl-[150px] pr-[150px] pt-[50px] pb-[50px] gap-x-[50px]">
-      <!-- About -->
-      <div class="flex flex-col h-[700px] w-[600px] bg-white rounded-[20px] shadow-lg p-[50px]">
-        <div class="flex flex-row pb-[25px] border-b-2 border-b-[#9CA3AF]">
-          <div class="w-[150px] h-[150px] rounded-full shadow-lg border-4 border-white overflow-hidden">
-            <img class="w-[150px] h-[150px] object-cover" src="./public/images/aina.JPG" alt="Avatar">
-          </div>
-          <div class="flex flex-col justify-items-end ml-[50px]">
-            <h1 class="text-[24px] font-bold text-[#1F2937] my-[5px]">Aina Andriamiadantsoa</h1>
-            <h2 class="text-[16px] font-bold text-[#1F2937] my-[5px]">Admin Système & Réseau | Dev</h2>
-            <h3 class="text-[12px] text-[#9CA3AF] my-[5px]">Madagascar</h3>
-            <ul class="flex flex-row my-[10px] items-center justify-between">
-              <li><a href="https://www.facebook.com" target="_blank"><img class="h-[25px]" src="./public/icons/facebookdark.svg" alt="facebook_logo"></a></li>
-              <li><a href="https://www.twitter.com" target="_blank"><img class="h-[25px]" src="./public/icons/twitterdark.svg" alt="twitter_logo"></a></li>
-              <li><a href="https://www.instagram.com" target="_blank"><img class="h-[25px]" src="./public/icons/instagramdark.svg" alt="instagram_logo"></a></li>
-              <li><a href="https://www.discord.com" target="_blank"><img class="h-[25px]" src="./public/icons/discorddark.svg" alt="discord_logo"></a></li>
-            </ul>
+    <!--  About -->
+    <div class="grid sm:grid-cols-1 md:grid-cols-3 h-[800px] bg-[#F9FAFB] pl-[150px] pr-[150px] pt-[50px] pb-[50px] gap-x-[50px]">
+      <!-- Bio -->
+      <div class="grid grid-rows-5 h-[700px] w-[500px] bg-white rounded-[20px] shadow-lg p-[35px] space-y-[25px]">
+        <!-- Photo -->
+        <div class="flex justify-center">
+          <div class="w-[130px] h-[130px] rounded-full shadow-lg border-4 border-white overflow-hidden">
+            <img class="w-[130px] h-[130px] object-cover" src="./public/images/aina.JPG" alt="Avatar">
           </div>
         </div>
-        <div class="flex flex-col mt-[25px] gap-y-[25px]">
 
-          <div class="text-[10px]">
-            <h1 class="text-[24px] font-bold">Parcours</h1>
-            <p class="text-[16px]">Diplômé en Informatique, formé en Design Graphique à l’Orange Digital Center, avec une expérience en réseaux acquise lors d’un stage à la Bank of Africa Madagascar.</p>
-          </div>
-
-          <div class="py-[10px]">
-            <h1 class="text-[24px] font-bold">Vision & Personnalité</h1>
-            <p class="text-[16px]">Passionné par la technologie, je crois en des solutions innovantes, simples et utiles. Curieux, rigoureux et engagé, j’aime apprendre en continu et relever de nouveaux défis.</p>
-          </div>
-
-          <div class="flex flex-row justify-end">
-            <button class="flex items-center rounded justify-center bg-[#3B82F6] font-bold text-white w-[170px] h-[40px] transition duration-150 transform active:scale-95 hover:scale-110 hover:bg-[#CC00FF]">Télécharger le CV</button>
-          </div>
-
-          <div class="flex flex-row items-center justify-center h-[50px]">
-            <p class="text-[12px] text-[#9CA3AF] italic">"Je pense que c’est possible pour des gens ordinaires de choisir d’être extraordinaires."</p>
-          </div>
+        <!-- Name and contact -->
+        <div>
+          <h1 class="text-[24px] font-bold text-[#1F2937] my-[5px]">Aina Andriamiadantsoa</h1>
+          <h2 class="text-[16px] font-bold text-[#1F2937] my-[5px]">Admin Système & Réseau | Dev</h2>
+          <h3 class="text-[12px] text-[#9CA3AF] my-[5px]">Madagascar</h3>
+          <ul class="flex flex-row my-[10px] items-center space-x-[20px] pb-[20px]">
+            <li><a href="https://www.facebook.com" target="_blank"><img class="h-[13px]" src="./public/icons/facebookdark.svg" alt="facebook_logo"></a></li>
+            <li><a href="https://www.twitter.com" target="_blank"><img class="h-[13px]" src="./public/icons/twitterdark.svg" alt="twitter_logo"></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><img class="h-[13px]" src="./public/icons/instagramdark.svg" alt="instagram_logo"></a></li>
+            <li><a href="https://www.discord.com" target="_blank"><img class="h-[13px]" src="./public/icons/discorddark.svg" alt="discord_logo"></a></li>
+          </ul>
         </div>
-          
-        
+
+        <!-- Parcours -->
+        <div>
+          <h1 class="mt-5 text-[24px] font-bold text-[#1F2937]">Parcours</h1>
+          <p class="text-[16px]">Diplômé en Informatique, formé en Design Graphique à l’Orange Digital Center, avec une expérience en réseaux acquise lors d’un stage à la Bank of Africa Madagascar.</p>
+        </div>
+
+        <!-- Vision -->
+        <div>
+          <h1 class="mt-5 text-[24px] text-[#1F2937] font-bold">Vision & Personnalité</h1>
+          <p class="text-[16px]">Passionné par la technologie, je crois en des solutions innovantes, simples et utiles. Curieux, rigoureux et engagé, j’aime apprendre en continu et relever de nouveaux défis.</p>
+        </div>
+
+        <!-- Download Resume -->
+        <div class="flex justify-end items-center px-5 h-[100px]">
+          <button class="flex items-center rounded-full justify-center bg-[#3B82F6] font-bold text-white w-[170px] h-[40px] transition duration-150 transform active:scale-95 hover:scale-105">Télécharger le CV</button>
+        </div>
       </div>
 
-      <!-- Skills -->
-      <div class="flex flex-col h-[700px] w-[600px] bg-white rounded-[20px] shadow-lg p-[50px]">
-        
-        <div class="flex flex-col gap-y-[25px]">
-
-          <div class="text-[10px]">
-            <h1 class="text-[24px] font-bold">Admin Système & Réseau</h1>
+      <!-- Skills 01 -->
+      <div class="grid grid-rows-2 h-[700px] w-[500px] bg-white rounded-[20px] shadow-lg p-[35px]">
+        <div>
+          <h1 class="text-[24px] text-[#1F2937] font-bold">Admin Système & Réseau</h1>
             
-            <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Système d’exploitation</h2>
-            <div class="w-full bg-gray-200 rounded-full h-[15px]">
-              <div class="progress-bar flex flex-row rounded-s-full justify-end w-[90%] h-[15px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] font-bold text-white">90 %</p></div>
-            </div>  
-            
-            <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Réseaux</h2>
-            <div class="w-full bg-gray-200 rounded-full h-[15px]">
-              <div class="flex flex-row rounded-s-full justify-end w-[80%] h-[15px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] font-bold text-white">80 %</p></div>
-            </div>
-
-            <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Sécurité informatique</h2>
-            <div class="w-full bg-gray-200 rounded-full h-[15px]">
-              <div class="flex flex-row rounded-s-full justify-end w-[40%] h-[15px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] font-bold text-white">40 %</p></div>
-            </div>
-
-            <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Cloud & Virtualisation</h2>
-            <div class="w-full bg-gray-200 rounded-full h-[15px]">
-              <div class="flex flex-row rounded-s-full justify-end w-[50%] h-[15px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] font-bold text-white">50 %</p></div>
-            </div>
-
-            <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Outils & Services</h2>
-            <div class="w-full bg-gray-200 rounded-full h-[15px]">
-              <div class="flex flex-row rounded-s-full justify-end w-[70%] h-[15px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] font-bold text-white">70 %</p></div>
-            </div>
+          <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Système d’exploitation</h2>
+          <div class="w-full bg-gray-200 rounded-full h-[12px]">
+            <div class="progress-bar flex flex-row rounded-s-full justify-end w-[90%] h-[12px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] text-[8px] font-bold text-white">90 %</p></div>
+          </div>  
+          
+          <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Réseaux</h2>
+          <div class="w-full bg-gray-200 rounded-full h-[12px]">
+            <div class="flex flex-row rounded-s-full justify-end w-[80%] h-[12px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] text-[8px] font-bold text-white">80 %</p></div>
           </div>
 
-          <div class="text-[10px]">
-            <h1 class="text-[24px] font-bold">Dev</h1>
-            
-            <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Frontend</h2>
-            <div class="w-full bg-gray-200 rounded-full h-[15px]">
-              <div class="progress-bar flex flex-row rounded-s-full justify-end w-[90%] h-[15px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] font-bold text-white">90 %</p></div>
-            </div>  
-            
-            <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Backend</h2>
-            <div class="w-full bg-gray-200 rounded-full h-[15px]">
-              <div class="flex flex-row rounded-s-full justify-end w-[50%] h-[15px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] font-bold text-white">50 %</p></div>
-            </div>
-
-            <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Dévéloppement mobile</h2>
-            <div class="w-full bg-gray-200 rounded-full h-[15px]">
-              <div class="flex flex-row rounded-s-full justify-end w-[60%] h-[15px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] font-bold text-white">60 %</p></div>
-            </div>
-
-            <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Base de données</h2>
-            <div class="w-full bg-gray-200 rounded-full h-[15px]">
-              <div class="flex flex-row rounded-s-full justify-end w-[80%] h-[15px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] font-bold text-white">80 %</p></div>
-            </div>
-
-            <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Framework JS</h2>
-            <div class="w-full bg-gray-200 rounded-full h-[15px]">
-              <div class="flex flex-row rounded-s-full justify-end w-[88%] h-[15px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] font-bold text-white">88 %</p></div>
-            </div>
+          <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Sécurité informatique</h2>
+          <div class="w-full bg-gray-200 rounded-full h-[12px]">
+            <div class="flex flex-row rounded-s-full justify-end w-[40%] h-[12px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] text-[8px] font-bold text-white">40 %</p></div>
           </div>
+
+          <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Cloud & Virtualisation</h2>
+          <div class="w-full bg-gray-200 rounded-full h-[12px]">
+            <div class="flex flex-row rounded-s-full justify-end w-[50%] h-[12px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] text-[8px] font-bold text-white">50 %</p></div>
+          </div>
+
+          <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Outils & Services</h2>
+          <div class="w-full bg-gray-200 rounded-full h-[12px]">
+            <div class="flex flex-row rounded-s-full justify-end w-[70%] h-[12px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] text-[8px] font-bold text-white">70 %</p></div>
           </div>
         </div>
-          
-        
       </div>
+
+      <!-- Skills 02 -->
+      <div class="h-[700px] w-[500px] bg-white rounded-[20px] shadow-lg p-[35px]">
+        <div class="text-[10px]">
+          <h1 class="text-[24px] text-[#1F2937] font-bold">Dev</h1>
+          
+          <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Frontend</h2>
+          <div class="w-full bg-gray-200 rounded-full h-[12px]">
+            <div class="progress-bar flex flex-row rounded-s-full justify-end w-[90%] h-[12px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] text-[8px] font-bold text-white">90 %</p></div>
+          </div>  
+          
+          <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Backend</h2>
+          <div class="w-full bg-gray-200 rounded-full h-[12px]">
+            <div class="flex flex-row rounded-s-full justify-end w-[50%] h-[12px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] text-[8px] font-bold text-white">50 %</p></div>
+          </div>
+
+          <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Dévéloppement mobile</h2>
+          <div class="w-full bg-gray-200 rounded-full h-[12px]">
+            <div class="flex flex-row rounded-s-full justify-end w-[60%] h-[12px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] text-[8px] font-bold text-white">60 %</p></div>
+          </div>
+
+          <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Base de données</h2>
+          <div class="w-full bg-gray-200 rounded-full h-[12px]">
+            <div class="flex flex-row rounded-s-full justify-end w-[80%] h-[12px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] text-[8px] font-bold text-white">80 %</p></div>
+          </div>
+
+          <h2 class="text-[#9CA3AF] text-[16px] my-[5px]">Framework JS</h2>
+          <div class="w-full bg-gray-200 rounded-full h-[12px]">
+            <div class="flex flex-row rounded-s-full justify-end w-[88%] h-[12px] bg-blue-500 overflow-hidden transition-all duration-1000 ease-in-out"><p class="pr-[25px] text-[8px] font-bold text-white">88 %</p></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
 
     <!-- Projects Section  -->
-     <div class="flex flex-row px-[150px] py-[50px] h-[582px] bg-[#1E293B]">
-      <h1 class="text-[24px] font-bold text-white">Projets</h1>
-     </div>
+    <div class="px-[150px] py-[50px] h-[700px] bg-[#1E293B]">
+      <!-- Titre -->
+      <div class="mb-[50px]">
+        <h1 class="text-[24px] font-bold text-white">Projets</h1>
+      </div>
+
+      <!-- Project container -->
+      <div class="grid grid-cols-3 gap-x-[50px]">
+        <div class="h-[500px] w-[500px] bg-white rounded-[20px]">
+
+        </div>
+        <div class="h-[500px] w-[500px] bg-white rounded-[20px]">
+
+        </div>
+        <div class="h-[500px] w-[500px] bg-white rounded-[20px]">
+
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Services -->
+    <div class="grid grid-cols-4 bg-[#F9FAFB] py-[50px] px-[80px]">
+      <h1 class="col-span-4 row-span-1 h-[50px] mb-[50px] bg-red-500">Services</h1>
+
+     
+      <div class="h-[400px] w-[283px] bg-white rounded-[20px] shadow-md">
+
+      </div>
+      <div class="h-[400px] w-[283px] bg-white rounded-[20px] shadow-md">
+
+      </div>
+      <div class="h-[400px] w-[283px] bg-white rounded-[20px] shadow-md">
+
+      </div>
+      <div class="h-[400px] w-[283px] bg-white rounded-[20px] shadow-md">
+
+      </div>
+      
+    </div>
+
+
+
+
 
     <script type="module" src="/src/main.js"></script>
   </body>
